@@ -8,8 +8,27 @@ package com.mycompany.csc325_oop_designreview_lab;
  *
  * @author MoaathAlrajab
  */
-public class Student {
-	// ToDo 1: Make this class a child of Human
+public class Student extends Human{
+	private int credits;
+    private double gpa;
+
+    // Constructor that takes name, age and credits
+    public Student(String name, int age, int credits) {
+        super(name, (short) age);
+        this.credits = credits;
+    }
+
+    // Setter for GPA
+    public void setGPA(double gpa) {
+        this.gpa = gpa;
+    }
+
+    // Getter for GPA
+    public double getGPA() {
+        return gpa;
+    }
+
+    // ToDo 1: Make this class a child of Human
 
 	// ToDo 2: Fix the resulting errors
 
