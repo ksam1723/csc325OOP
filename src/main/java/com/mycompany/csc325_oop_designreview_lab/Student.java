@@ -11,6 +11,7 @@ package com.mycompany.csc325_oop_designreview_lab;
 public class Student extends Human{
 	private int credits;
     private double gpa;
+    private String Address;
 
     // Constructor that takes name, age and credits
     public Student(String name, int age, int credits) {
@@ -28,11 +29,20 @@ public class Student extends Human{
         return gpa;
     }
 
-    // ToDo 1: Make this class a child of Human
+    // Getter for Credits
+    public int getCredits() {
+        return credits;
+    }
 
-	// ToDo 2: Fix the resulting errors
+    // Abstract method from human
+    @Override
+    public String getAddress() {
+        return Address;
+    }
 
-	// ToDo 3: Add a field for GPA and create a setter and a getter
-	
-	// ToDo 4: Add comments to your code
+    @Override
+    public void setAddress(String address) {
+        this.Address = address;
+    }
+
 }
