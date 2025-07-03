@@ -45,4 +45,9 @@ public class Student extends Human{
         this.Address = address;
     }
 
+    @Override
+    public String toString() {
+        return "Student Name: " + getName() + ", Age: " + getAge() +
+                ", Credits: " + credits + ", GPA: " + gpa;
+    }
 }

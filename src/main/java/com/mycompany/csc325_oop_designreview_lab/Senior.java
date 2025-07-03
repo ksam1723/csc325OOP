@@ -8,4 +8,8 @@ public class Senior extends Student{
             throw new IllegalArgumentException("Credits must be greater than 85");
         }
     }
+
+    public String toString() {
+        return "Senior: " + super.toString();
+    }
 }
