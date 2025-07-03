@@ -45,6 +45,7 @@ public class Student extends Human{
         this.Address = address;
     }
 
+    // toString method for Student
     @Override
     public String toString() {
         return "Student Name: " + getName() + ", Age: " + getAge() +

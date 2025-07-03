@@ -6,6 +6,7 @@ public class Freshman extends Student {
         super(name, age, credits);
     }
 
+    // toString method for freshman
     @Override
     public String toString() {
         return "Freshman: " + super.toString();
